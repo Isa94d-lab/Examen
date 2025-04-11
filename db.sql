@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS Cliente (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(20),
     apellido VARCHAR(20),
-    correo VARCHAR(20),
+    correo VARCHAR(30),
     telefono VARCHAR(20)
 );
 
