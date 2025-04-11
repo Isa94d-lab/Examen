@@ -1,4 +1,4 @@
--- Insertar proveedores
+
 INSERT INTO Proveedor (nombre, direccion) VALUES
 ('Juanitosa', 'Calle Ficticia 123'),
 ('BabyScore', 'Avenida Central 45'),
@@ -6,43 +6,47 @@ INSERT INTO Proveedor (nombre, direccion) VALUES
 ('Dijimond', 'Calle Real 89'),
 ('EstemanComputers', 'Avenida Libertad 12');
 
--- Insertar categorías de productos
+
+
+
 INSERT INTO CategoriaProducto (nombre) VALUES
-('Electrónica'),
+('Electronica'),
 ('Muebles'),
 ('Ropa'),
 ('Alimentos'),
 ('Juguetes');
 
--- Insertar vendedores
-INSERT INTO Vendedor (nombre, apellido) VALUES
-('Carlos', 'Gómez'),
-('Ana', 'Martínez'),
-('Luis', 'Pérez'),
-('María', 'Rodríguez'),
-('Javier', 'Hernández');
 
--- Insertar clientes
+
+INSERT INTO Vendedor (nombre, apellido) VALUES
+('Carlos', 'Gomez'),
+('Ana', 'Martinez'),
+('Luis', 'Perez'),
+('Maria', 'Rodriguez'),
+('Javier', 'Hernandez');
+
+
+
+
 INSERT INTO Cliente (nombre, apellido, correo, telefono) VALUES
-('Juan', 'Pérez', 'juan.perez@email.com', '123456789'),
-('Maria', 'González', 'maria.gonzalez@email.com', '987654321'),
-('Carlos', 'Sánchez', 'carlos.sanchez@email.com', '456123789'),
-('Ana', 'López', 'ana.lopez@email.com', '321654987'),
-('Luis', 'Martín', 'luis.martin@email.com', '789123456'),
-('Marta', 'Fernández', 'marta.fernandez@email.com', '654987321'),
-('Pedro', 'Rodríguez', 'pedro.rodriguez@email.com', '321789654'),
-('Laura', 'García', 'laura.garcia@email.com', '963852741'),
-('José', 'Jiménez', 'jose.jimenez@email.com', '741258963'),
-('David', 'Hernández', 'david.hernandez@email.com', '852369741'),
-('Sofia', 'Vázquez', 'sofia.vazquez@email.com', '258963741'),
-('Raúl', 'Moreno', 'raul.moreno@email.com', '369741258'),
+('Juan', 'Perez', 'juan.perez@email.com', '123456789'),
+('Maria', 'Gonzalez', 'maria.gonzalez@email.com', '987654321'),
+('Carlos', 'Sanchez', 'carlos.sanchez@email.com', '456123789'),
+('Ana', 'Lopez', 'ana.lopez@email.com', '321654987'),
+('Luis', 'Martin', 'luis.martin@email.com', '789123456'),
+('Marta', 'Fernandez', 'marta.fernandez@email.com', '654987321'),
+('Pedro', 'Rodriguez', 'pedro.rodriguez@email.com', '321789654'),
+('Laura', 'Garcia', 'laura.garcia@email.com', '963852741'),
+('Jose', 'Jimenez', 'jose.jimenez@email.com', '741258963'),
+('David', 'Hernandez', 'david.hernandez@email.com', '852369741'),
+('Sofia', 'Vazquez', 'sofia.vazquez@email.com', '258963741'),
+('Raul', 'Moreno', 'raul.moreno@email.com', '369741258'),
 ('Elena', 'Ruiz', 'elena.ruiz@email.com', '147258369'),
 ('Felipe', 'Torres', 'felipe.torres@email.com', '753159846'),
-('Sara', 'Martínez', 'sara.martinez@email.com', '951753684');
+('Sara', 'Martinez', 'sara.martinez@email.com', '951753684');
 
 
 
--- Insertar ProveedorProductos
 INSERT INTO ProveedorProductos (id_proveedor) VALUES
 (1),
 (2),
@@ -51,8 +55,6 @@ INSERT INTO ProveedorProductos (id_proveedor) VALUES
 (5);
 
 
-
--- Insertar productos
 INSERT INTO Producto (id_proveedorProductos, nombre, stock, precio_unidad) VALUES
 (1, 'Laptop', 30, 1000.00),
 (1, 'Smartphone', 50, 500.00),
@@ -70,7 +72,8 @@ INSERT INTO Producto (id_proveedorProductos, nombre, stock, precio_unidad) VALUE
 (5, 'Doll', 100, 15.00),
 (5, 'Lego Set', 50, 40.00);
 
--- Insertar ProductoVenta
+
+
 INSERT INTO ProductoVenta (id_producto) VALUES
 (1),
 (2),
@@ -89,7 +92,6 @@ INSERT INTO ProductoVenta (id_producto) VALUES
 (15);
 
 
--- Insertar Ventas
 INSERT INTO Venta (id_productoVenta, id_cliente, id_vendedor, fecha) VALUES
 (1, 1, 1, '2025-02-11'),
 (2, 2, 2, '2025-02-03'),
