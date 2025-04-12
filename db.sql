@@ -1,6 +1,6 @@
 CREATE DATABASE TeachZone;
 
-USE TeachZone;
+\c teachzone;
 
 
 CREATE TABLE IF NOT EXISTS Proveedor (
