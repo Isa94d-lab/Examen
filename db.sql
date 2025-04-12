@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Proveedor (
 
 CREATE TABLE IF NOT EXISTS CategoriaProducto (
     id SERIAL PRIMARY KEY,
-    nombre VARCHAR(20)
+    nombre VARCHAR(30)
 );
 
 
@@ -41,10 +41,12 @@ CREATE TABLE IF NOT EXISTS ProveedorProductos (
 CREATE TABLE IF NOT EXISTS Producto (
     id SERIAL PRIMARY KEY,
     id_proveedorProductos INTEGER,
+    id_categoriaProducto INTEGER,
     nombre VARCHAR(20),
     stock INT,
     precio_unidad DECIMAL,
-    FOREIGN KEY (id_proveedorProductos) REFERENCES ProveedorProductos(id)
+    FOREIGN KEY (id_proveedorProductos) REFERENCES ProveedorProductos(id),
+    FOREIGN KEY (id_categoriaProducto) REFERENCES CategoriaProducto(id)
 );
 
 

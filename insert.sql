@@ -10,11 +10,11 @@ INSERT INTO Proveedor (nombre, direccion) VALUES
 
 
 INSERT INTO CategoriaProducto (nombre) VALUES
-('Electronica'),
-('Muebles'),
-('Ropa'),
-('Alimentos'),
-('Juguetes');
+('Computadores y portatiles'),
+('Dispositivos moviles'),
+('Componentes y accesorios'),
+('Redes y conectividad'),
+('Software y servicios');
 
 
 
@@ -29,21 +29,21 @@ INSERT INTO Vendedor (nombre, apellido) VALUES
 
 
 INSERT INTO Cliente (nombre, apellido, correo, telefono) VALUES
-('Juan', 'Perez', 'juan.perez@email.com', '123456789'),
-('Maria', 'Gonzalez', 'maria.gonzalez@email.com', '987654321'),
-('Carlos', 'Sanchez', 'carlos.sanchez@email.com', '456123789'),
+('Juan', 'Perez', 'juan.perez@email.com', '3178232743'),
+('Maria', 'Gonzalez', 'maria.gonzalez@email.com', '3219476421'),
+('Carlos', 'Sanchez', 'carlos.sanchez@email.com', '315658765439'),
 ('Ana', 'Lopez', 'ana.lopez@email.com', '321654987'),
-('Luis', 'Martin', 'luis.martin@email.com', '789123456'),
-('Marta', 'Fernandez', 'marta.fernandez@email.com', '654987321'),
-('Pedro', 'Rodriguez', 'pedro.rodriguez@email.com', '321789654'),
-('Laura', 'Garcia', 'laura.garcia@email.com', '963852741'),
-('Jose', 'Jimenez', 'jose.jimenez@email.com', '741258963'),
-('David', 'Hernandez', 'david.hernandez@email.com', '852369741'),
-('Sofia', 'Vazquez', 'sofia.vazquez@email.com', '258963741'),
-('Raul', 'Moreno', 'raul.moreno@email.com', '369741258'),
-('Elena', 'Ruiz', 'elena.ruiz@email.com', '147258369'),
-('Felipe', 'Torres', 'felipe.torres@email.com', '753159846'),
-('Sara', 'Martinez', 'sara.martinez@email.com', '951753684');
+('Luis', 'Martin', 'luis.martin@email.com', '3224782999'),
+('Marta', 'Fernandez', 'marta.fernandez@email.com', '3176395732'),
+('Pedro', 'Rodriguez', 'pedro.rodriguez@email.com', '3229485907'),
+('Laura', 'Garcia', 'laura.garcia@email.com', '3225748392'),
+('Jose', 'Jimenez', 'jose.jimenez@email.com', '31185906004'),
+('David', 'Hernandez', 'david.hernandez@email.com', '3148602312'),
+('Sofia', 'Vazquez', 'sofia.vazquez@email.com', '3228112039'),
+('Raul', 'Moreno', 'raul.moreno@email.com', '3178901231'),
+('Elena', 'Ruiz', 'elena.ruiz@email.com', '3156783908'),
+('Felipe', 'Torres', 'felipe.torres@email.com', '3112314654'),
+('Sara', 'Martinez', 'sara.martinez@email.com', '3178394890');
 
 
 
@@ -55,22 +55,22 @@ INSERT INTO ProveedorProductos (id_proveedor) VALUES
 (5);
 
 
-INSERT INTO Producto (id_proveedorProductos, nombre, stock, precio_unidad) VALUES
-(1, 'Laptop', 30, 1000.00),
-(1, 'Smartphone', 50, 500.00),
-(1, 'Tablet', 20, 300.00),
-(2, 'Sofa', 15, 200.00),
-(2, 'Chair', 40, 50.00),
-(2, 'Table', 25, 120.00),
-(3, 'T-shirt', 100, 15.00),
-(3, 'Jeans', 80, 30.00),
-(3, 'Jacket', 60, 50.00),
-(4, 'Chocolate', 200, 5.00),
-(4, 'Cookies', 150, 2.50),
-(4, 'Juice', 100, 3.00),
-(5, 'Toy Car', 120, 10.00),
-(5, 'Doll', 100, 15.00),
-(5, 'Lego Set', 50, 40.00);
+INSERT INTO Producto (id_proveedorProductos, id_categoriaProducto, nombre, stock, precio_unidad) VALUES
+(1, 1, 'Laptop', 30, 1000.00),
+(1, 2, 'Smartphone', 50, 500.00),
+(1, 1, 'Tablet', 20, 300.00),
+(2, 3, 'Mouse', 100, 20.00),
+(2, 3, 'Keyboard', 80, 40.00),
+(2, 3, 'Monitor', 40, 150.00),
+(2, 3, 'External Hard Drive', 30, 80.00),
+(3, 4, 'Router', 25, 50.00),
+(3, 4, 'Switch', 20, 120.00),
+(3, 4, 'Access Point', 15, 70.00),
+(4, 5, 'Software Antivirus', 100, 30.00),
+(4, 5, 'Operating System', 50, 100.00),
+(5, 3, 'USB Cable', 150, 5.00),
+(5, 3, 'HDMI Cable', 120, 10.00),
+(1, 1, 'Gaming Laptop', 15, 900.00);
 
 
 
